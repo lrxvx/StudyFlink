@@ -35,7 +35,7 @@ class KafkaConsumerTest implements Runnable {
     private final String topic;
 
 
-    public KafkaConsumerTest(String servers, String groupId, String topicName) {
+    KafkaConsumerTest(String servers, String groupId, String topicName) {
         Properties props = new Properties();
         props.put("bootstrap.servers", servers);
         props.put("group.id", groupId);

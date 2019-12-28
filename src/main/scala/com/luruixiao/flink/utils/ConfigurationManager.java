@@ -25,7 +25,7 @@ public class ConfigurationManager {
 	 */
 	private static Properties prop = new Properties();
 	
-	/**
+	/*
 	 * 静态代码块
 	 * 
 	 * Java中，每一个类第一次使用的时候，就会被Java虚拟机（JVM）中的类加载器，去从磁盘上的.class文件中

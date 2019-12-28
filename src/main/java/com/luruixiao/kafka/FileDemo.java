@@ -1,14 +1,13 @@
 package com.luruixiao.kafka;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 /**
- * @author
+ * @author luruixiao
  */
 public class FileDemo {
 
