@@ -15,6 +15,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 
 /**
+ * bug分支修改
  * @author luruixiao
  */
 public class KafkaProducerTest implements Runnable {
