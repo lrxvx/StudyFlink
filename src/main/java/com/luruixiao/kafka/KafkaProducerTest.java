@@ -16,6 +16,8 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 /**
  * bug分支修改
+ * dev分支修改
+ * 一些修改等等，
  * @author luruixiao
  */
 public class KafkaProducerTest implements Runnable {
@@ -32,6 +34,7 @@ public class KafkaProducerTest implements Runnable {
         props.put("key.serializer", StringSerializer.class.getName());
         props.put("value.serializer", StringSerializer.class.getName());
 //        auto.create.topics.enable=true
+        ///增加的了新的功能
         this.producer = new KafkaProducer<String, String>(props);
         this.topic = topicName;
     }
