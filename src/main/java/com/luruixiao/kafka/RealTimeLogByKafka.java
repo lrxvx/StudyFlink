@@ -45,7 +45,7 @@ class KafkaConsumerTest implements Runnable {
         props.put("auto.offset.reset", "earliest");
         props.put("key.deserializer", StringDeserializer.class.getName());
         props.put("value.deserializer", StringDeserializer.class.getName());
-        this.consumer = new KafkaConsumer<String, String>(props);
+        this.consumer = new KafkaConsumer<>(props);
         this.topic = topicName;
         this.consumer.subscribe(Arrays.asList(topic));
     }

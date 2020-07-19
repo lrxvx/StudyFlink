@@ -13,7 +13,7 @@ object DataStreamWcApp {
       val env = StreamExecutionEnvironment.getExecutionEnvironment
 
       // nc -lk 7777 nn1机器命令，然后输入数据
-      val dataStream: DataStream[String] = env.socketTextStream("nn1", 7777)
+      val dataStream: DataStream[String] = env.socketTextStream("node1", 7777)
 
       val result: DataStream[(String, Int)] = dataStream.flatMap(_.split(" ")).filter(_.nonEmpty).map((_,1)).keyBy(0).sum(1)
 
